@@ -1,4 +1,8 @@
 import { Module } from '@nestjs/common';
+import { AccessService } from './access.service';
 
-@Module({})
+@Module({
+  providers: [AccessService],
+  exports: [AccessService],
+})
 export class CommonModule {}
